@@ -319,3 +319,16 @@ footer .sns-icons a {
   height: 1em;           /* 文字の高さに合わせる */
   vertical-align: middle; /* 絵文字のように文字と揃える */
   }
+
+  /* 通常時のリンクの色（例：青色、下線なし） */
+.link-pipoya {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s; /* 色の変化を滑らかにする */
+}
+
+/* マウスオーバー時の色（例：オレンジ色、下線あり） */
+.link-pipoya:hover {
+  color: #ff6600;
+  text-decoration: underline;
+}
