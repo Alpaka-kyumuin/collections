@@ -197,6 +197,16 @@ h3 {
   text-align: left;
 }
 
+.soundcloud-card {
+  grid-column: 1 / -1;
+}
+
+.soundcloud-embed-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
 .soundcloud-embed {
   margin-bottom: 12px;
   border-radius: 10px;
@@ -230,6 +240,12 @@ h3 {
 
 .soundcloud-links a:hover {
   background: #BFDBFE;
+}
+
+@media (max-width: 768px) {
+  .soundcloud-embed-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Links and Tags */
