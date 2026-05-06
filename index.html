@@ -19,8 +19,8 @@
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
-        <li><a href="#works">Works</a></li>
-        <li><a href="#audio">Audio</a></li>
+        <li><a href="#showcase">Games & Music</a></li>
+        <li><a href="#works">Gameplay</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -37,134 +37,69 @@
     <p>DTM制作、ゲーム開発をがんばっています</p>
   </section>
 
-  <!-- About -->
+  <!-- About（ファーストコンテンツ） -->
   <section id="about" class="about">
     <h3>About Me</h3>
     <p>ゲーム制作とDTMを活用して、音と物語が交差する世界を探求しています。<br>
     サウンド実装・BGM制作・演出設計を通じて、人の心に残る体験を作りたいです。</p>
   </section>
 
-  <!-- Works -->
-  <section id="works" class="works">
-    <h3>Works / Prototype Collection</h3>
-    <div class="work-grid">
-      <div class="card">
-        <img src="images/ClickMyRoom.png" alt="Game01 Thumbnail">
-        <h4>Click, My Room!（クリックゲーム）</h4>
-        <p> 音楽選択とストーリー演出を組み合わせたクリックゲーム。（プレイ時は横画面推奨）<br>使用素材：自作BGM・SE <br>※背景画像・立ち絵はAI生成</p>
-        <div class="tags">
-          <span>#Unity</span> <span>#C#</span> <span>#Fungus</span><span>#Logic Pro</span>
-        </div>
-        <a class="button" href="games/ClickMyRoom/" target="_blank">プレイする ▶</a>
-      </div>
-
-      <div class="card">
-        <img src="images/RinRin.png" alt="Game02 Thumbnail">
-        <h4>りんりんマッチ（Match3パズル）</h4>
-        <p>BGMのキーに合わせた音階のSEを入れて、どのピースに触れても調和するようになっています。<br>使用素材：自作BGM・SE、ピース画像 <br>※タイトル画像はAI生成</p>
-         <div class="tags">
-          <span>#Unity</span> <span>#C#</span> <span>#Logic Pro</span>
-        </div>
-         <a class="button" href="games/RinRInMatch/" target="_blank">プレイする ▶</a>
-      </div>
-      
-      <div class="card">
-        <img src="images/MidnightRadio.png" alt="Game01 Thumbnail">
-        <h4>Midnight Songs<br>（ラジオDJシミュレーション）</h4>
-        <p>CRI ADX LEを使用し、それぞれのBGMがクロスフェードで入れ替わるようにしました。<br>
-          使用素材：自作BGM、ジングル（AIで作成した音声をLogic proで加工）<br>※タイトル画像はAI生成
-        </p>
-        <div class="tags">
-          <span>#CRI ADX LE</span> <span>#Ink</span> <span>#C#</span><span>#Logic Pro</span>
-        </div>
-        
-        <a class="button" href="games/Radio_proto/" target="_blank">プレイする ▶</a>
-      </div>
-
-        <div class="card">
-          <img src="images/Mend&Mingle_thumbnail.png" alt="Game01 Thumbnail">
-          <h4>Mend&Mingle<br>（村人交流アドベンチャー）</h4>
-          <p>自作のBGMとSEをCRI ADX LEを使用し実装。タイトル画像はAI生成、ゲーム内のドット絵は<a href="https://pipoya.net/" class="link-pipoya" target="_blank" rel="noopener">ぴぽや</a>さんのものをお借りしました。
-
-          </p>
-          <div class="tags">
-           <span>#CRI ADX LE</span> <span>#Ink</span> <span>#C#</span><span>#Logic Pro</span>
-        </div>
-        
-        <a class="button" href="games/shuri/" target="_blank">プレイする ▶</a>
-      </div>
-
-      </div>
-        <div class="card">
-          <img src="images/ComingSoon.png" alt="Game01 Thumbnail">
-          <h4>鋭意制作中！</h4>
-          <p> 作成中です。</p>
-          <div class="tags">
-            <span>#Unity</span> <span>#C#</span> <span>#Logic Pro</span>
-        </div>
-        
-        <a class="button" href="games/Tanpen/" target="_blank">プレイする ▶</a>
-      </div>
-    </div>
-  </section>
-
-<!-- Music Portfolio -->
-<section id="audio" class="music-portfolio">
-  <h3>🎵 Music Portfolio</h3>
-  <p class="intro">
-    オリジナルBGM・SE・サウンドスケープの制作事例。<br>
-    作品ごとに異なる感情・シーンを音でデザインしています。
-  </p>
-
-  <div class="music-grid">
-
-    <!-- Track 1 -->
-    <div class="music-card">
-      <img src="images/imgsample.png" alt="Match3house">
-      <div class="music-content">
-        <h4>Mono Drive</h4>
-        <p class="desc">
-          パズルゲームなどに合いそうなシンプルなハウスミュージック。（サンプル版）
-        </p>
-        <audio controls>
-          <source src="audio/Match3用house.sample.mp3" type="audio/mpeg">
-        </audio>
-        <div class="tags">
-          <span>#Lo-fi</span> <span>#RainyMood</span> <span>#GameBGM</span>
+  <!-- Games & Music -->
+  <section id="showcase" class="main-showcase">
+    <h2 class="showcase-page-title">Games & Music</h2>
+    <p class="showcase-lead">これまでに製作した作品です。</p>
+    <div class="showcase-grid">
+      <div class="showcase-col showcase-games">
+        <h3 class="showcase-block-title"><span class="sec-icon" aria-hidden="true">🎮</span> Games</h3>
+        <p class="showcase-sub">ブラウザで遊べる作品は <strong>itch.io</strong> で公開しています。</p>
+        <ul class="showcase-game-list">
+          <li>
+            <a class="showcase-game-link" href="https://alpaka-kyumuin.itch.io/rinrinmatch" target="_blank" rel="noopener">
+              <span class="sg-title">りんりんマッチ</span>
+              <span class="sg-note">Match3パズル · BGMの調に合わせたSE</span>
+            </a>
+          </li>
+          <li>
+            <a class="showcase-game-link" href="https://alpaka-kyumuin.itch.io/midnight-songs" target="_blank" rel="noopener">
+              <span class="sg-title">Midnight Songs</span>
+              <span class="sg-note">深夜ラジオDJシミュレーション</span>
+            </a>
+          </li>
+          <li>
+            <a class="showcase-game-link" href="https://alpaka-kyumuin.itch.io/mend-and-mingle" target="_blank" rel="noopener">
+              <span class="sg-title">Mend &amp; Mingle</span>
+              <span class="sg-note">村人交流アドベンチャー</span>
+            </a>
+          </li>
+          <li>
+            <a class="showcase-game-link" href="https://alpaka-kyumuin.itch.io/tanpen" target="_blank" rel="noopener">
+              <span class="sg-title">Short Sound Novel Anthology</span>
+              <span class="sg-note">短編ビジュアルノベル系</span>
+            </a>
+          </li>
+          <li>
+            <a class="showcase-game-link showcase-game-link--local" href="games/ClickMyRoom/" target="_blank" rel="noopener">
+              <span class="sg-title">Click, My Room!</span>
+              <span class="sg-note">クリック進行 · このサイトからプレイ（itch.io 未掲載）</span>
+            </a>
+          </li>
+          <li>
+            <a class="showcase-game-link showcase-game-link--local" href="https://godotplayer.com/games/moon_garden" target="_blank" rel="noopener">
+              <span class="sg-title">Moon Garden</span>
+              <span class="sg-note">Match3パズル ·外部サイト（Godot Player）からプレイ（itch.io 未掲載）</span>
+            </a>
+          </li>
+        </ul>
+        <div class="showcase-game-cta">
+          <a class="button button-itch" href="https://alpaka-kyumuin.itch.io/" target="_blank" rel="noopener">itch.io で一覧を見る</a>
+          <a class="button button-note" href="https://note.com/alpaca_kyumuin" target="_blank" rel="noopener">制作振り返りを note で読む</a>
         </div>
       </div>
-    </div>
 
-    <!-- Track 2 -->
-    <div class="music-card">
-      <!-- <img src="images/sakamichi_thumb.jpg" alt="Coming Soon"> -->
-      <div class="music-content">
-        <h4>Coming Soon...</h4>
-        <p class="desc">
-      鋭意制作中！
-        </p>
-        <!--<audio controls>
-          <source src="audio/sakamichi_demo.mp3" type="audio/mpeg">
-        </audio>
-        <div class="links">
-          <a href="https://audiostock.jp/" target="_blank">Audiostock 🎧</a>
-          <a href="https://soundcloud.com/" target="_blank">SoundCloud ▶</a>
-        </div>
-        <div class="tags">
-          <span>#Pop</span> <span>#Latin</span> <span>#Daylight</span>
-        </div>
-      -->
-      </div>
-    </div>
-
-    <!-- SoundCloud Picks -->
-    <div class="music-card soundcloud-card">
-      <div class="music-content">
-        <h4>SoundCloud Picks</h4>
-        <p class="desc">
-          SoundCloudで代表曲を公開しています。
-        </p>
-        <div class="soundcloud-embed-grid">
+      <div class="showcase-col showcase-music">
+        <h3 class="showcase-block-title"><span class="sec-icon" aria-hidden="true">🎵</span> Music</h3>
+        <p class="showcase-sub">SoundCloud の代表トラックです。</p>
+        <div class="showcase-embeds">
           <div class="soundcloud-embed">
             <iframe
               title="SoundCloud track 1"
@@ -184,47 +119,188 @@
             ></iframe>
           </div>
         </div>
-        <div class="soundcloud-links">
-          <a href="https://soundcloud.com/naoko_takaoka/sets/my-portfolio?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank" rel="noopener">SoundCloudで他の作品を見る</a>
+        <div class="showcase-music-cta">
+          <a href="https://soundcloud.com/naoko_takaoka/sets/my-portfolio?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank" rel="noopener">SoundCloud のプレイリスト</a>
           <a href="https://soundcloud.com/naoko_takaoka" target="_blank" rel="noopener">プロフィールをフォロー</a>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- Track 3 
-    <div class="music-card">
-      <img src="images/nightcity_thumb.jpg" alt="Night City Lights">
-      <div class="music-content">
-        <h4>Night City Lights</h4>
-        <p class="desc">
-          シティポップ風のエレクトリックサウンド。<br>
-          FM音源風シンセで夜の街のきらめきを表現。
-        </p>
-        <audio controls>
-          <source src="audio/nightcity_demo.mp3" type="audio/mpeg">
-        </audio>
-        <div class="links">
-          <a href="https://audiostock.jp/" target="_blank">Audiostock 🎧</a>
-          <a href="https://soundcloud.com/" target="_blank">SoundCloud ▶</a>
+  <!-- プレイ動画（YouTube）※ 増やすときは article.video-card をまるごとコピー -->
+  <section id="works" class="works works-videos works-videos--coming-soon">
+    <h3>Games — プレイ動画（YouTube）</h3>
+    <p class="works-intro">自作ゲームのプレイ映像です。実際に遊ぶには <a href="https://alpaka-kyumuin.itch.io/" target="_blank" rel="noopener">itch.io</a> やこのサイト内のブラウザ版からどうぞ。</p>
+
+    <div class="video-cards-grid">
+
+      <article class="video-card">
+        <div class="video-card__embed video-embed">
+          <iframe
+            title="Short Sound Novel Anthology — プレイ動画"
+            src="https://www.youtube.com/embed/VIDEO_ID_1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
         </div>
+        <h4>りんりんマッチ</h4>
+        <p class="video-card__desc">BGMのキーに合わせた音階のSEを入れて、どのピースに触れても調和するようになっています。<br>使用素材：自作BGM・SE、ピース画像<br>※タイトル画像はAI生成</p>
         <div class="tags">
-          <span>#CityPop</span> <span>#Synthwave</span> <span>#Chill</span>
+          <span>#Unity</span>
+          <span>#Logic&nbsp;Pro</span>
         </div>
-      </div>
-    </div>
--->
-  </div>
-</section>
+        <div class="video-card__actions">
+          <a class="button button-itch" href="https://alpaka-kyumuin.itch.io/rinrinmatch" target="_blank" rel="noopener">itch.io で見る</a>
+        </div>
+      </article>
 
+      <article class="video-card">
+        <div class="video-card__embed video-embed">
+          <iframe
+            title="Midnight Songs — プレイ動画"
+            src="https://www.youtube.com/embed/VIDEO_ID_2"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+        <h4>Midnight Songs</h4>
+        <p class="video-card__desc">深夜ラジオDJシミュレーションのプレイ映像。<br>CRI ADX LEを使用し、それぞれのBGMがクロスフェードで入れ替わるようにしました。<br>使用素材：自作BGM、ジングル（AIで作成した音声を加工）<br>※タイトル画像はAI生成</p>
+        <div class="tags">
+          <span>#Unity</span>
+          <span>#CRI&nbsp;ADX&nbsp;LE</span>
+          <span>#Ink</span>
+          <span>#Logic&nbsp;Pro</span>
+        </div>
+        <div class="video-card__actions">
+          <a class="button button-itch" href="https://alpaka-kyumuin.itch.io/midnight-songs" target="_blank" rel="noopener">itch.io で見る</a>
+        </div>
+      </article>
 
-  <!-- Audio -->
-  <section id="platforms" class="audio">
-    <h3>Audio Platforms</h3>
-    <p>外部プラットフォームでは、より多くの音源を公開しています。</p>
-    <div class="audio-links">
-      <a href="https://audiostock.jp/artists/59008" target="_blank" rel="noopener">AudioStockで聴く 🎧</a>
-      <a href="https://soundcloud.com/naoko_takaoka" target="_blank" rel="noopener">SoundCloudで聴く ▶</a>
-    </div>
+      <article class="video-card">
+        <div class="video-card__embed video-embed">
+          <iframe
+            title="Click, My Room! — プレイ動画"
+            src="https://www.youtube.com/embed/VIDEO_ID_3"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+        <h4>Mend & Mingle</h4>
+        <p class="video-card__desc">自作のBGMとSEをCRI ADX LEを使用し実装。タイトル画像はAI生成、ゲーム内のドット絵は<a href="https://pipoya.net/" class="link-pipoya" target="_blank" rel="noopener">ぴぽや</a>さんのものをお借りしました。</p>
+        <div class="tags">
+          <span>#Unity</span>
+          <span>#CRI ADX LE</span>
+          <span>#Ink</span>
+          <span>#Logic&nbsp;Pro</span>
+        </div>
+        <div class="video-card__actions">
+          <a class="button button-itch" href="https://alpaka-kyumuin.itch.io/mend-and-mingle" target="_blank" rel="noopener">itch.io で見る</a>
+        </div>
+      </article>
+
+      <article class="video-card">
+        <div class="video-card__embed video-embed">
+          <iframe
+            title="Short Sound Novel Anthology — プレイ動画"
+            src="https://www.youtube.com/embed/VIDEO_ID_1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+        <h4>Short Sound Novel Anthology</h4>
+        <p class="video-card__desc">一話完結式の日常系ショートサウンドノベル。軽妙な台詞回しと音楽が醸し出す雰囲気をお楽しみいただければうれしいです。<br>一話当たりのプレイ時間：約10~15分<br>使用素材：<a href="https://unsplash.com/ja" class="link-unsplash" target="_blank" rel="noopener">unsplash</a>（背景画像）</p>
+        <div class="tags">
+          <span>#Unity</span>
+          <span>#CRI ADX LE</span>
+          <span>#Ink</span>
+          <span>#Logic&nbsp;Pro</span>
+        </div>
+        <div class="video-card__actions">
+          <a class="button button-itch" href="https://alpaka-kyumuin.itch.io/tanpen" target="_blank" rel="noopener">itch.io で見る</a>
+        </div>
+      </article>
+
+      <article class="video-card">
+        <div class="video-card__embed video-embed">
+          <iframe
+            title="Short Sound Novel Anthology — プレイ動画"
+            src="https://www.youtube.com/embed/VIDEO_ID_1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+        <h4>Click, My Room!</h4>
+        <p class="video-card__desc">音楽選択とストーリー演出を組み合わせたクリックゲーム。（プレイ時は横画面推奨）<br>使用素材：自作BGM・SE<br>※背景画像・立ち絵はAI生成</p>
+        <div class="tags">
+          <span>#Unity</span>
+          <span>#Fungus</span>
+          <span>#Logic&nbsp;Pro</span>
+        </div>
+        <div class="video-card__actions">
+          <a class="button" href="games/ClickMyRoom/" target="_blank" rel="noopener">このサイトでプレイ</a>
+        </div>
+      </article>
+
+      <article class="video-card">
+        <div class="video-card__embed video-embed">
+          <iframe
+            title="Short Sound Novel Anthology — プレイ動画"
+            src="https://www.youtube.com/embed/VIDEO_ID_1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+        <h4>Moon Garden　〜玉兎の庭づくり〜</h4>
+        <p class="video-card__desc">Godot Japan GAME JAM 2026（GJGJ2026）参加作品。<br>「マル」と「成長」といテーマでのゲームづくり。大変勉強になりました。</p>
+        <div class="tags">
+          <span>#Godot</span>
+          <span>#Aseprite</span>
+          <span>#Logic&nbsp;Pro</span>
+        </div>
+        <div class="video-card__actions">
+          <a class="button button-itch" href="https://godotplayer.com/games/moon_garden" target="_blank" rel="noopener">GodotPlayer で見る</a>
+        </div>
+      </article>
+
+      <!-- <article class="video-card">
+        <div class="video-card__embed video-embed">
+          <iframe
+            title="Short Sound Novel Anthology — プレイ動画"
+            src="https://www.youtube.com/embed/VIDEO_ID_1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+        <h4>短編サウンドノベル（迷い家）</h4>
+        <p class="video-card__desc">一話完結式の怪談系ショートサウンドノベル。<br>一話当たりのプレイ時間：約10~15分<br>使用素材：<a href="https://unsplash.com/ja" class="link-unsplash" target="_blank" rel="noopener">unsplash</a>（背景画像）</p>
+        <div class="tags">
+          <span>#Unity</span>
+          <span>#CRI ADX LE</span>
+          <span>#Ink</span>
+          <span>#Logic&nbsp;Pro</span>
+        </div>
+        <div class="video-card__actions">
+          <a class="button button-itch" href="https://alpaka-kyumuin.itch.io/tanpen" target="_blank" rel="noopener">itch.io で見る</a>
+        </div>
+      </article> -->
+
+    </div> 
+
+    <p class="video-embed-note">※ プレイ動画は現在準備中です。公開後は順次このページで視聴できるように更新します。</p>
   </section>
 
   <!-- Contact -->
