@@ -609,3 +609,40 @@ footer .sns-icons {
   color: #ff6600;
   text-decoration: underline;
 }
+
+/* 動画準備中モード: セクションに works-videos--coming-soon を付ける */
+.videos--coming-soon .video-card .video-card__embed iframe {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.videos--coming-soon .video-card .video-card__embed::before {
+  content: "Coming Soon";
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #e5e7eb;
+  background:
+    linear-gradient(135deg, rgba(30, 41, 59, 0.95) 0%, rgba(15, 23, 42, 0.95) 100%);
+  z-index: 1;
+}
+
+.videos--coming-soon .video-card .video-card__embed::after {
+  content: "プレイ動画は近日公開予定";
+  position: absolute;
+  left: 50%;
+  bottom: 14px;
+  transform: translateX(-50%);
+  font-size: 0.8rem;
+  color: #cbd5e1;
+  background: rgba(15, 23, 42, 0.65);
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  border-radius: 999px;
+  padding: 4px 10px;
+  z-index: 2;
+  white-space: nowrap;
+}
