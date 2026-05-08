@@ -1,0 +1,611 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Inter:wght@400;600&display=swap');
+
+body {
+  font-family: 'Noto Sans JP', 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #111827;
+  background-color: #F9FAFB;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background: white;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+header h1 {
+  font-size: 1.4rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #111827;
+  font-weight: 500;
+}
+
+.sns-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.sns-icons a {
+  margin-left: 0;
+}
+
+.sns-link {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid #D1D5DB;
+  background: #FFFFFF;
+  color: #111827;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.sns-link:hover {
+  background: #EFF6FF;
+  border-color: #93C5FD;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 80px 16px;
+  background: linear-gradient(180deg, #E0F2FE, #F9FAFB);
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  max-width: 36rem;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+  color: #374151;
+}
+
+/* メインショーケース（ゲーム・音楽をファーストビュー直下で並列表示） */
+.main-showcase {
+  max-width: 1040px;
+  margin: 48px auto 64px;
+  padding: 40px 20px 48px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(15, 23, 42, 0.06);
+  border: 1px solid #E5E7EB;
+}
+
+.showcase-page-title {
+  font-size: 1.5rem;
+  margin: 0 0 8px;
+  padding-left: 10px;
+  border-left: 4px solid #3B82F6;
+  color: #111827;
+}
+
+.showcase-lead {
+  margin: 0 0 28px;
+  padding-left: 14px;
+  color: #4B5563;
+  font-size: 0.95rem;
+}
+
+.showcase-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.showcase-col {
+  background: linear-gradient(180deg, #F8FAFC 0%, #F9FAFB 100%);
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 20px 18px 22px;
+}
+
+.showcase-block-title {
+  font-size: 1.2rem;
+  margin: 0 0 10px;
+  color: #1E3A8A;
+  border-left: none;
+  padding-left: 0;
+}
+
+.sec-icon {
+  margin-right: 4px;
+}
+
+.showcase-sub {
+  font-size: 0.88rem;
+  color: #6B7280;
+  margin: 0 0 16px;
+  line-height: 1.55;
+}
+
+.showcase-game-list {
+  list-style: none;
+  margin: 0 0 18px;
+  padding: 0;
+}
+
+.showcase-game-list li {
+  margin-bottom: 10px;
+}
+
+.showcase-game-link {
+  display: block;
+  text-align: left;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: #ffffff;
+  border: 1px solid #E5E7EB;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.showcase-game-link:hover {
+  border-color: #93C5FD;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.12);
+}
+
+.showcase-game-link--local {
+  border-style: dashed;
+}
+
+.sg-title {
+  display: block;
+  font-weight: 700;
+  color: #111827;
+  font-size: 0.95rem;
+}
+
+.sg-note {
+  display: block;
+  font-size: 0.8rem;
+  color: #6B7280;
+  margin-top: 4px;
+}
+
+.showcase-embeds {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.showcase-embeds .soundcloud-embed {
+  margin-bottom: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.showcase-embeds .soundcloud-embed iframe {
+  width: 100%;
+  height: 140px;
+  border: 0;
+  display: block;
+}
+
+.showcase-music-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.showcase-music-cta a {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #1D4ED8;
+  background: #DBEAFE;
+}
+
+.showcase-music-cta a:hover {
+  background: #BFDBFE;
+}
+
+.showcase-more {
+  margin: 14px 0 0;
+  font-size: 0.88rem;
+}
+
+.showcase-more a {
+  color: #2563EB;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.showcase-more a:hover {
+  text-decoration: underline;
+}
+
+.showcase-game-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.showcase-game-cta .button {
+  margin-top: 0;
+}
+
+.button-note {
+  background: #eef2ff;
+  color: #1e3a8a;
+  border: 1px solid #c7d2fe;
+}
+
+.button-note:hover {
+  background: #e0e7ff;
+}
+
+/* About（ヒーロー直下） */
+.about {
+  margin-top: 48px;
+  margin-bottom: 40px;
+}
+
+/* Works: プレイ動画カード（YouTube） */
+.video-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  max-width: 720px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+@media (min-width: 960px) {
+  .video-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1040px;
+    gap: 24px;
+  }
+}
+
+.video-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.video-card h4 {
+  font-size: 1.18rem;
+  margin: 0 0 8px;
+  color: #1e3a8a;
+  padding-left: 0;
+  border-left: none;
+}
+
+.video-card__desc {
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: #4b5563;
+  margin: 0 0 12px;
+}
+
+.video-card .tags {
+  margin: 2px 0 14px;
+}
+
+.video-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.video-card__actions .button {
+  margin-top: 0;
+}
+
+.video-card .video-card__embed.video-embed {
+  position: relative;
+  width: 100%;
+  margin: 0 0 14px;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background: #0f0f0f;
+}
+
+.video-card .video-card__embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.button-itch {
+  background: #FA5C5C;
+}
+
+.button-itch:hover {
+  filter: brightness(1.05);
+}
+
+.button-outline {
+  background: #ffffff;
+  color: #2563EB;
+  border: 2px solid #93C5FD;
+}
+
+.button-outline:hover {
+  background: #EFF6FF;
+}
+
+@media (max-width: 900px) {
+  .showcase-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Section Common */
+section {
+  max-width: 960px;
+  margin: 80px auto;
+  padding: 0 16px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  border-left: 4px solid #3B82F6;
+  padding-left: 8px;
+}
+
+/* Works Grid */
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2列固定 */
+  gap: 24px; /* カード同士の余白 */
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  text-align: center;
+
+  /* 追加（カードの高さを揃えるために必要） */
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: auto;       /* 忘れずに追加 */
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.button {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #3B82F6;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 16px;
+}
+
+.card .button {
+  margin-top: auto; /* カード最下部に揃う */
+}
+
+.card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+.card-actions .button {
+  margin-top: 0;
+}
+
+.card-desc {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #4B5563;
+  margin: 0 0 12px;
+  flex-grow: 0;
+}
+
+.works-intro {
+  font-size: 0.92rem;
+  color: #6B7280;
+  margin: -8px 0 24px;
+  line-height: 1.6;
+}
+
+.works-intro a {
+  color: #2563EB;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.works-intro a:hover {
+  text-decoration: underline;
+}
+
+.card .tags {
+  margin-bottom: 16px; /* ← タグの下に余白を作る */
+}
+
+.soundcloud-embed {
+  margin-bottom: 12px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.soundcloud-embed iframe {
+  width: 100%;
+  height: 166px;
+  border: 0;
+  display: block;
+}
+
+.tags {
+  margin-top: 8px;
+}
+
+.tags span {
+  background: #E0F2FE;
+  color: #0369A1;
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  border-radius: 6px;
+  margin-right: 6px;
+}
+
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 48px 16px;
+  background: #F3F4F6;
+}
+
+footer .sns-icons {
+  justify-content: center;
+}
+
+.credit {
+  font-size: 0.8rem;
+  color: #6B7280;
+  margin-top: 16px;
+}
+
+/* =============================
+   ハンバーガーメニュー対応
+============================= */
+
+/* ボタンの基本デザイン */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #333;
+}
+
+/* スマホサイズ対応 */
+@media (max-width: 768px) {
+  header {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    padding-right: 56px; /* ハンバーガーボタン分の余白を確保 */
+  }
+
+  /* 追加：Works を 1列表示に変更 */
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
+
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 1001; /* メニューより前面に */
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 56px; /* ハンバーガーの下に配置 */
+    right: 16px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 12px 0;
+    width: 180px;
+    text-align: right;
+    z-index: 1000;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav li {
+    margin: 0;
+  }
+
+  nav a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+  }
+
+  nav a:hover {
+    background-color: #f0f0f0;
+  }
+
+  .sns-icons {
+    margin-top: 8px;
+    margin-right: 36px; /* 右上ボタンとの重なりを防止 */
+    align-self: flex-end;
+  }
+}
+
+/* 通常時のリンクの色（例：青色、下線なし） */
+.link-pipoya {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s; /* 色の変化を滑らかにする */
+}
+
+/* マウスオーバー時の色（例：オレンジ色、下線あり） */
+.link-pipoya:hover {
+  color: #ff6600;
+  text-decoration: underline;
+}
