@@ -611,12 +611,12 @@ footer .sns-icons {
 }
 
 /* 動画準備中モード: セクションに works-videos--coming-soon を付ける */
-.videos--coming-soon .video-card .video-card__embed iframe {
+.works-videos--coming-soon .video-card .video-card__embed iframe {
   opacity: 0;
   pointer-events: none;
 }
 
-.videos--coming-soon .video-card .video-card__embed::before {
+.works-videos--coming-soon .video-card .video-card__embed::before {
   content: "Coming Soon";
   position: absolute;
   inset: 0;
@@ -631,7 +631,7 @@ footer .sns-icons {
   z-index: 1;
 }
 
-.videos--coming-soon .video-card .video-card__embed::after {
+.works-videos--coming-soon .video-card .video-card__embed::after {
   content: "プレイ動画は近日公開予定";
   position: absolute;
   left: 50%;
