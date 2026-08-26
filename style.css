@@ -390,8 +390,8 @@ h3 {
 /* Works Grid */
 .work-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2列固定 */
-  gap: 24px; /* カード同士の余白 */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -402,15 +402,13 @@ h3 {
   padding: 16px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   text-align: center;
-
-  /* 追加（カードの高さを揃えるために必要） */
   display: flex;
   flex-direction: column;
 }
 
 .card img {
   width: 100%;
-  height: auto;       /* 忘れずに追加 */
+  height: auto;
   border-radius: 8px;
   margin-bottom: 12px;
 }
@@ -426,7 +424,7 @@ h3 {
 }
 
 .card .button {
-  margin-top: auto; /* カード最下部に揃う */
+  margin-top: auto;
 }
 
 .card-actions {
@@ -468,7 +466,7 @@ h3 {
 }
 
 .card .tags {
-  margin-bottom: 16px; /* ← タグの下に余白を作る */
+  margin-bottom: 16px;
 }
 
 .soundcloud-embed {
@@ -497,7 +495,6 @@ h3 {
   margin-right: 6px;
 }
 
-
 /* Footer */
 footer {
   text-align: center;
@@ -519,7 +516,6 @@ footer .sns-icons {
    ハンバーガーメニュー対応
 ============================= */
 
-/* ボタンの基本デザイン */
 .menu-toggle {
   display: none;
   font-size: 1.8rem;
@@ -529,17 +525,15 @@ footer .sns-icons {
   color: #333;
 }
 
-/* スマホサイズ対応 */
 @media (max-width: 768px) {
   header {
     position: relative;
     flex-direction: column;
     align-items: flex-start;
     padding: 16px;
-    padding-right: 56px; /* ハンバーガーボタン分の余白を確保 */
+    padding-right: 56px;
   }
 
-  /* 追加：Works を 1列表示に変更 */
   .work-grid {
     grid-template-columns: 1fr;
   }
@@ -553,14 +547,14 @@ footer .sns-icons {
     position: absolute;
     top: 16px;
     right: 16px;
-    z-index: 1001; /* メニューより前面に */
+    z-index: 1001;
   }
 
   nav ul {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 56px; /* ハンバーガーの下に配置 */
+    top: 56px;
     right: 16px;
     background-color: #fff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -592,25 +586,22 @@ footer .sns-icons {
 
   .sns-icons {
     margin-top: 8px;
-    margin-right: 36px; /* 右上ボタンとの重なりを防止 */
+    margin-right: 36px;
     align-self: flex-end;
   }
 }
 
-/* 通常時のリンクの色（例：青色、下線なし） */
 .link-pipoya {
   color: #007bff;
   text-decoration: none;
-  transition: color 0.3s; /* 色の変化を滑らかにする */
+  transition: color 0.3s;
 }
 
-/* マウスオーバー時の色（例：オレンジ色、下線あり） */
 .link-pipoya:hover {
   color: #ff6600;
   text-decoration: underline;
 }
 
-/* 動画準備中モード: article.video-card に works-videos--coming-soon を付ける */
 .video-card.works-videos--coming-soon .video-card__embed iframe {
   opacity: 0;
   pointer-events: none;
@@ -645,4 +636,177 @@ footer .sns-icons {
   padding: 4px 10px;
   z-index: 2;
   white-space: nowrap;
+}
+
+/* =============================
+   Personal Works セクション
+============================= */
+
+.personal-works {
+  max-width: 1040px;
+  margin: 80px auto;
+  padding: 40px 20px 48px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(15, 23, 42, 0.06);
+  border: 1px solid #E5E7EB;
+}
+
+.pw-title {
+  font-size: 1.5rem;
+  margin: 0 0 8px;
+  padding-left: 10px;
+  border-left: 4px solid #7C3AED;
+  color: #111827;
+}
+
+.pw-title-icon {
+  margin-right: 6px;
+}
+
+.pw-lead {
+  margin: 0 0 28px;
+  padding-left: 14px;
+  color: #4B5563;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* カードグリッド */
+.pw-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+@media (min-width: 640px) {
+  .pw-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 960px) {
+  .pw-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* 個別カード */
+.pw-card {
+  background: linear-gradient(180deg, #FAF5FF 0%, #F9FAFB 100%);
+  border: 1px solid #DDD6FE;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.pw-card:hover {
+  box-shadow: 0 4px 16px rgba(124, 58, 237, 0.12);
+  border-color: #A78BFA;
+}
+
+/* SoundCloudエンベッド */
+.pw-embed--sc {
+  width: 100%;
+  overflow: hidden;
+}
+
+.pw-embed--sc iframe {
+  width: 100%;
+  height: 160px;
+  border: 0;
+  display: block;
+}
+
+/* YouTubeエンベッド（16:9比率） */
+.pw-embed--yt {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  background: #0f0f0f;
+}
+
+.pw-embed--yt iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* カード本文 */
+.pw-card__body {
+  padding: 14px 16px 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.pw-card__title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #4C1D95;
+  margin: 0 0 6px;
+  padding: 0;
+  border: none;
+}
+
+.pw-card__desc {
+  font-size: 0.87rem;
+  color: #4B5563;
+  line-height: 1.6;
+  margin: 0 0 10px;
+  flex: 1;
+}
+
+/* Personal Works タグ（紫系） */
+.pw-card .tags span {
+  background: #EDE9FE;
+  color: #5B21B6;
+}
+
+/* CTAリンク */
+.pw-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.pw-cta-link {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  background: #EDE9FE;
+  color: #5B21B6;
+  transition: background 0.2s;
+}
+
+.pw-cta-link:hover {
+  background: #DDD6FE;
+}
+
+.pw-cta-link--yt {
+  background: #FEE2E2;
+  color: #991B1B;
+}
+
+.pw-cta-link--yt:hover {
+  background: #FECACA;
+}
+
+/* スマホ対応 */
+@media (max-width: 640px) {
+  .personal-works {
+    padding: 24px 14px 32px;
+  }
 }
